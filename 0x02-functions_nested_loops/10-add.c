@@ -1,34 +1,17 @@
 #include "main.h"
 
+
 /**
- * times_table - Prints the 9 times table
- *
- * Return: no return
+ * add - Adds two values
+ * @n1: The first number to be computed
+ * @n2: The second number to be computed
+ * Return: Integer value
  */
-void times_table(void)
+
+int add(int n1, int n2)
+
 {
-	int a, b, op;
 
-	for (a = 0; a <= 9; a++)
-	{
+	return (n1 + n2);
 
-		_putchar(48);
-		for (b = 1; b <= 9; b++)
-		{
-			op = a * b;
-			_putchar(44);
-			_putchar(32);
-			if (op <= 9)
-			{
-				_putchar(32);
-				_putchar(op + 48);
-			}
-			else
-			{
-				_putchar((op / 10) + 48);
-				_putchar((op % 10) + 48);
-			}
-		}
-		_putchar('\n');
-	}
 }
